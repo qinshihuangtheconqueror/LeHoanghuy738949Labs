@@ -7,7 +7,7 @@ public class InputFromKeyboard {
         int iAge = keyboard.nextInt();
         System.out.println("How tall are you (m) ?");
         double dHeight = keyboard.nextDouble();
-        System.out.println("Mrs/Ms. "+strName+ ", "+iAge+" years old."+ "Your Height is"+dHeight+".");
+        System.out.println("Mrs/Ms. "+strName+ ", "+iAge+" years old."+ "Your Height is "+dHeight+".");
 
     }
 }
