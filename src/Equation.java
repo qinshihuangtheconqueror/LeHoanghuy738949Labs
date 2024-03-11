@@ -1,24 +1,63 @@
 import java.util.Scanner;
-public class Equation{
-    public static void main(String[] args)
-    {
+
+public class Equation {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        boolean exit = false;
+
+        while (!exit) {
+            System.out.println("Choose an option:");
+            System.out.println("1. First-degree equation (Linear equation)");
+            System.out.println("2. System of first-degree equations with two variables");
+            System.out.println("3. Second-degree equation (Quadratic equation)");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    solveLinearEquation(scanner);
+                    break;
+                case 2:
+                    solveSystemOfEquations(scanner);
+                    break;
+                case 3:
+                    solveQuadraticEquation(scanner);
+                    break;
+                case 4:
+                    exit = true;
+                    System.out.println("Exiting the program. Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please enter a number between 1 and 4.");
+            }
+        }
+
+        scanner.close();
+    }
+
+    private static void solveLinearEquation(Scanner scanner) {
         System.out.println("First-degree equation (Linear equation) with one variable (ax+b=0):");
         System.out.print("Enter the value for a: ");
         double a = scanner.nextDouble();
         System.out.print("Enter the value for b: ");
         double b = scanner.nextDouble();
-        if (a!= 0){
-            double x = -b/a;
-            System.out.println("Solution is: x ="+x);
 
+        if (a != 0) {
+            double x = -b / a;
+            System.out.println("Solution is: x =" + x);
         } else if (b == 0) {
             System.out.println("Infinite solutions (0x = 0 for any x)");
         } else {
             System.out.println("No solution (0x = " + b + ")");
         }
-        System.out.println("\nSystem of first-degree equations with two variables:");
-        System.out.print("Enter the values for a11, a12, b1, a21, a22, b2 (separated by spaces) : ");
+    }
+
+    private static void solveSystemOfEquations(Scanner scanner) {
+        System.out.println("System of first-degree equations with two variables:");
+        System.out.print("Enter the values for a11, a12, b1, a21, a22, b2 (separated by spaces): ");
         double a11 = scanner.nextDouble();
         double a12 = scanner.nextDouble();
         double b1 = scanner.nextDouble();
@@ -37,8 +76,10 @@ public class Equation{
         } else {
             System.out.println("No solution (Inconsistent system)");
         }
+    }
 
-        System.out.println("\nSecond-degree equation with one variable (Quadratic equation):");
+    private static void solveQuadraticEquation(Scanner scanner) {
+        System.out.println("Second-degree equation with one variable (Quadratic equation):");
         System.out.print("Enter the values for a, b, c (separated by spaces): ");
         double quadA = scanner.nextDouble();
         double quadB = scanner.nextDouble();
@@ -56,9 +97,5 @@ public class Equation{
         } else {
             System.out.println("No real roots (Complex roots)");
         }
-
-        scanner.close();
-       //*hi//
-
     }
 }
