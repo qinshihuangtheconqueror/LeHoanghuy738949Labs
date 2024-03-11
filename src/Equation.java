@@ -58,7 +58,7 @@ public class Equation{
         }
 
         scanner.close();
-
+       //*hi//
 
     }
 }
