@@ -30,6 +30,7 @@ public class stars {
 
             // Move to the next line after each row
             System.out.println();
+            //hehe
         }
     }
 }
