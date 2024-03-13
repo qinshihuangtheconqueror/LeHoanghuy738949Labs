@@ -46,7 +46,7 @@ public class Numberdaymonth {
             case "3":
                 return 3;
             case "april":
-            case "apr.":
+            case "apr.": //hay
             case "apr":
             case "4":
                 return 4;
