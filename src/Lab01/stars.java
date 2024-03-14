@@ -6,7 +6,7 @@ public class stars {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input the height of the triangle
+        // Input the height of the triangle now
         System.out.print("Enter the height of the triangle: ");
         int n = scanner.nextInt();
 
