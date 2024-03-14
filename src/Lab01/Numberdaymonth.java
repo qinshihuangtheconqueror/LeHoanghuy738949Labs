@@ -29,7 +29,7 @@ public class Numberdaymonth {
 
         scanner.close();
     }
-
+    //function
     private static int getMonthFromInput(String monthInput) {
         switch (monthInput) {
             case "january":
