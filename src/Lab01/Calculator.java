@@ -1,7 +1,7 @@
 package Lab01;
 
 import java.util.Scanner;
-
+//calculator
 public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
