@@ -39,7 +39,7 @@ public class Equation {
 
         scanner.close();
     }
-
+//solved
     private static void solveLinearEquation(Scanner scanner) {
         System.out.println("First-degree equation (Linear equation) with one variable (ax+b=0):");
         System.out.print("Enter the value for a: ");
@@ -79,7 +79,7 @@ public class Equation {
             System.out.println("No solution (Inconsistent system)");
         }
     }
-
+//hhihihi
     private static void solveQuadraticEquation(Scanner scanner) {
         System.out.println("Second-degree equation with one variable (Quadratic equation):");
         System.out.print("Enter the values for a, b, c (separated by spaces): ");
