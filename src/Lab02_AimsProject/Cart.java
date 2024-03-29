@@ -1,6 +1,6 @@
 package Lab02_AimsProject;
 
-public class Cart {
+public class Cart {//oke
     public static final int MAX_NUMBERS_ORDERED = 20;
     private DigitalVideoDisc itemOrder[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
     private int qtyOrdered = 0;
