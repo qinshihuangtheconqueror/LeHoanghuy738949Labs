@@ -1,0 +1,17 @@
+Answer the question:
+- If user choose "Cancel", it says "You've chosen: No"
+- Use the method showOptionDialog()instead of showConfirmDialog() because we can change the list options in that method.
+
+Detail code:
+
+String[] options = {"Yes", "No"};
+int option = JOptionPane.showOptionDialog(null,
+                "Do you want to change to first class ticket?",
+                "Option Dialog",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                options,
+                options[0]);
+
+Other parts will be kept unchanged.
