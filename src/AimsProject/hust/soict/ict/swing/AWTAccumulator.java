@@ -1,4 +1,4 @@
-package hust.soict.globalict.swing;
+package AimsProject.hust.soict.ict.swing;
 
 import java.awt.*;
 import java.awt.event.*;

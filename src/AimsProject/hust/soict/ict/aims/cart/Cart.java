@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-    private final List<Media> itemsOrdered = new ArrayList<Media>();
+    private List<Media> itemsOrdered = new ArrayList<Media>();
 
     public List<Media> getItemsOrdered() {
         return itemsOrdered;
@@ -19,7 +19,7 @@ public class Cart {
             System.out.println("The item is already in the ordered list");
         }
     }
-    //check var
+
     public void removeMedia(Media media){
         if(itemsOrdered.contains(media)){
             itemsOrdered.remove(media);
