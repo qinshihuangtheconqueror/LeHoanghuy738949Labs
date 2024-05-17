@@ -3,12 +3,11 @@ package AimsProject.hust.soict.ict.aims.store;
 import AimsProject.hust.soict.ict.aims.media.Media;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Store {
-    private List<Media> itemsInStore = new ArrayList<Media>();
+    private ArrayList<Media> itemsInStore = new ArrayList<Media>();
 
-    public List<Media> getItemsInStore() {
+    public ArrayList<Media> getItemsInStore() {
         return itemsInStore;
     }
 

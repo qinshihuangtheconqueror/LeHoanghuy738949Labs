@@ -1,4 +1,4 @@
-package AimsProject.hust.soict.ict.test.store;
+package test.store;
 
 import AimsProject.hust.soict.ict.aims.media.DigitalVideoDisc;
 import AimsProject.hust.soict.ict.aims.store.Store;
