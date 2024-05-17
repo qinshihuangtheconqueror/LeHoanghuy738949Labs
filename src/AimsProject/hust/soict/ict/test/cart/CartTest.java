@@ -2,9 +2,6 @@ package AimsProject.hust.soict.ict.test.cart;
 
 import AimsProject.hust.soict.ict.aims.cart.Cart;
 import AimsProject.hust.soict.ict.aims.media.DigitalVideoDisc;
-import AimsProject.hust.soict.ict.aims.media.Media;
-
-import java.util.List;
 
 public class CartTest {
     public static void main(String[] args) {
