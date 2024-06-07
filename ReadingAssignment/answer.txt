@@ -1,0 +1,16 @@
+1. The class that should implement the 'Comparable' interface is 'Media'
+
+2. @Override
+    public int compareTo(Media other) {
+        int titleComparison = this.title.compareTo(other.title);
+        if (titleComparison != 0) {
+            return titleComparison;
+        }
+        return Float.compare(other.cost, title.cost);
+    }
+
+and same goes for sorting by cost then title
+
+3. No. We should use Comparator thenComparing method.
+
+4. We should override the compare method in DVD which is inherited from Media 

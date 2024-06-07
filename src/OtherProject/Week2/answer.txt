@@ -1,0 +1,2 @@
+JAVA doesn't allow us to create a constructor method to build a DVD by category after creating a constructor method to build a DVD by title.
+This is because two methods have the same input variable (1 String), so JAVA considers them as the same method.

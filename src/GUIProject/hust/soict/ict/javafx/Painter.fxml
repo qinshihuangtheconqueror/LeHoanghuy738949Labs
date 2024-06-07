@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIProject.hust.soict.ict.javafx.PainterController">
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+   <left>
+      <VBox maxHeight="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="8.0" />
+         </BorderPane.margin>
+         <children>
+            <TitledPane animated="false" maxHeight="1.7976931348623157E308" text="Tools">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <content>
+                  <VBox maxHeight="1.7976931348623157E308">
+                     <children>
+                        <RadioButton fx:id="penOption" maxHeight="1.7976931348623157E308" mnemonicParsing="false" selected="true" text="Pen">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="toolsButton" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="eraserOption" maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Eraser" toggleGroup="$toolsButton">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clearButtonPressed" text="Clear">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="drawingAreaPane" onMouseDragged="#drawingAreaMouseDragged" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
